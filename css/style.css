@@ -1,0 +1,305 @@
+/**********************************************************************************************
+
+1. Text
+2. Button
+3. Images
+4. Footer
+5. Card
+6. Paddings
+
+**********************************************************************************************/
+
+
+
+/*********************************************************************************************
+
+1. Text
+
+*********************************************************************************************/
+
+h1, h2, h3 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+}
+
+p, ul, li {
+  font-family: 'Rubik', sans-serif;
+}
+
+p {line-height: 150%;}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #29627B;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+a:hover, a:active{
+  outline: none;
+}
+
+ul.inlinelist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inlinelist > li {
+  display: inline-block;
+}
+
+li a.inlinelist {
+  display: block;
+  text-align: center;
+}
+
+#mainNav li {
+  display: inline-block;
+  padding-top: 1.0em;
+  padding-right: 5.0em;
+}
+#heroTxt {
+  font-size: 2.8em;
+}
+
+#heroSubTxt {
+  font-size: 1.875em;
+}
+
+.droidTxt {
+  font-family: 'Droid Serif', serif;
+}
+
+.rubikTxt {
+  font-family: 'Rubik', sans-serif;
+}
+
+.flrDetail{
+  font-family: 'Rubik', sans-serif;
+  margin-top: 10px;
+}
+
+.secHead {
+  font-size: 1.875em;
+  padding-bottom: 0.5em;
+}
+
+.whiteTxt {color: #ffffff;}
+.greyTxt {color: #65707F;}
+/*text alignment*/
+
+.tcenter{text-align:center}
+.tleft{text-align:left}
+.tright{text-align:right}
+.tupper{text-transform:uppercase}
+.tlower{text-transform:lowercase}
+.tnormal{text-transform:none}
+.ttop{text-align:top}
+.tmiddle{text-align:middle}
+.tbottom{text-align:bottom}
+
+
+/*********************************************************************************************
+
+2. Button
+
+*********************************************************************************************/
+
+button {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.0em;
+  padding: 0.75em 2.5em;
+  border-radius: 4px;
+}
+
+button.primBTN {
+  background-color: #29627B;
+  color: #ffffff;
+  border: none;
+}
+.primBTN:hover, .secBTN:hover {
+  background-color: #1e495b;
+  color: #ffffff;
+}
+
+button.secBTN {
+  background-color: #ffffff;
+  color: #29627B ;
+  border: 1px solid #29627B;
+}
+
+.pad30right {
+  padding-right: 30px;
+}
+
+.btn-group button {
+    background-color: #ffffff; /* Green background */
+    border: 1px solid #29627B; /* Green border */
+    color: #29627B; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    text-align: left;
+    border-radius: 0;
+    box-shadow: 0px 0px 5px #888888;
+
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #29627B;
+    color: #ffffff;
+}
+
+.btn-group button:disabled {
+  background-color: #29627B;
+  color: #ffffff;
+}
+
+/*********************************************************************************************
+
+3. Images
+
+*********************************************************************************************/
+
+#heroBanner {
+  background-image: url("../img/HeroIMG.png");
+  background-color: #29627B;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 70px 0px 0px 0px;
+}
+
+#homeFloorplans {
+  background-image: url("../img/floorplanIMG.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 533px;
+}
+
+#imgGallery {
+  background-image: url("../img/hoodIMG.png");
+  background-color: #ffffff;
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 440px;
+  overflow: visible;
+  /*margin-left: -20px;*/
+}
+
+.brImg{
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+#mainNavGroup {
+  margin-top: 3%;
+}
+
+
+/*********************************************************************************************
+
+4. Footer
+
+*********************************************************************************************/
+
+footer {
+  background-color: #65707F;
+  color: #ffffff;
+}
+
+footer a{
+  color: #ffffff;
+}
+
+footer li{
+  padding-right: 2.25em;
+}
+
+.footerID{
+  padding-top: 1.5em;
+}
+
+.CenterCallout {
+  padding-top: 2.75em;
+  padding-left: 1.75em;
+  border: 2px solid #FFB74D;
+  box-shadow: 0px 3px 6px #888888;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+
+.CenterCallout h2 {
+  padding-bottom: 1.0em;
+}
+
+
+/*********************************************************************************************
+
+5. Card
+
+*********************************************************************************************/
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  /*height: 370px;*/
+  width: 400px;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cardTxt {
+  padding: 2.0em;
+}
+
+.cardIMG {
+  float: right;
+  margin-top: -250px;
+  margin-right: 200px;
+}
+
+#homeFloorplans {
+  padding-top: 6.0em;
+}
+
+
+
+/*********************************************************************************************
+
+6. Padding
+
+*********************************************************************************************/
+
+.padbottom {padding-bottom: 10px;}
+
+.negtopmargin150 {
+  margin-top: -150px;
+}
+
+.imgPad10 {padding-right: 10px;}
