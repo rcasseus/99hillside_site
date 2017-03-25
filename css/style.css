@@ -139,9 +139,9 @@ button.secBTN {
 }
 
 .btn-group button {
-    background-color: #ffffff; /* Green background */
-    border: 1px solid #29627B; /* Green border */
-    color: #29627B; /* White text */
+    background-color: #ffffff;
+    border: 1px solid #29627B; 
+    color: #29627B;
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 100%; /* Set a width if needed */
@@ -159,7 +159,7 @@ button.secBTN {
 /* Add a background color on hover */
 .btn-group button:hover {
     background-color: #29627B;
-    color: #ffffff;
+    color: #ffffff  !important;
 }
 
 .btn-group button:disabled {
