@@ -4,7 +4,15 @@
 // Image Gallery for Floorplan.html
 // Code taken from our codepen account http://codepen.io/solidx00/pen/RKoYjX
 
-document.getElementById("[name="btn1"]").addEventListener("click", showImg1); // Event listener for the first button
+dD("btn1").addEventListener("click", redbtn); // Event listener for the first button
+    function redbtn() {
+      document.getElementById("[name="btn1"]").style.backgroundColor = "red";
+
+    }
+
+
+
+document.getElementByName("[name="btn1"]").addEventListener("click", showImg1); // Event listener for the first button
     function showImg1() {
       document.getElementById("img1").style.display = "block";
       document.getElementById("img2").style.display = "none";
