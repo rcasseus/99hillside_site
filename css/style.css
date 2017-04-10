@@ -6,6 +6,7 @@
 4. Footer
 5. Card
 6. Paddings
+7. Forms
 
 **********************************************************************************************/
 
@@ -17,6 +18,9 @@
 
 *********************************************************************************************/
 
+body {color: #343639}
+
+
 h1, h2, h3 {
   font-family: 'Droid Serif', serif;
   font-weight: 400;
@@ -24,6 +28,7 @@ h1, h2, h3 {
 
 p, ul, li {
   font-family: 'Rubik', sans-serif;
+
 }
 
 p {line-height: 150%;}
@@ -104,6 +109,10 @@ li a.inlinelist {
 .tmiddle{text-align:middle}
 .tbottom{text-align:bottom}
 
+#tagline {
+  padding: 0 0 0.50em 0;
+  font-size: 1.50em;
+}
 
 /*********************************************************************************************
 
@@ -118,12 +127,23 @@ button {
   border-radius: 4px;
 }
 
+.btn {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.0em;
+  padding: 0.75em 2.5em;
+  border-radius: 4px;
+  background-color: #29627B;
+  color: #ffffff;
+  border: none;
+}
+
+
 button.primBTN {
   background-color: #29627B;
   color: #ffffff;
   border: none;
 }
-.primBTN:hover, .secBTN:hover {
+.primBTN:hover, .secBTN:hover, .btn:hover {
   background-color: #1e495b;
   color: #ffffff;
 }
@@ -134,13 +154,23 @@ button.secBTN {
   border: 1px solid #29627B;
 }
 
+.btnHollow {
+  background-color: #ffffff;
+  color: #29627B ;
+  border: 1px solid #29627B;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.0em;
+  padding: 0.75em 2.5em;
+  border-radius: 4px;
+}
+
 .pad30right {
   padding-right: 30px;
 }
 
 .btn-group button {
     background-color: #ffffff;
-    border: 1px solid #29627B; 
+    border: 1px solid #29627B;
     color: #29627B;
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
@@ -165,6 +195,40 @@ button.secBTN {
 .btn-group button:disabled {
   background-color: #29627B;
   color: #ffffff;
+}
+
+/*.btn-group h3:hover {
+  color: #ffffff;
+}*/
+
+.getAppBtn{
+  background-color: #C6A42D;
+  height: 146px;
+  width: 146px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 2px #ccc;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.2em;
+  margin: -100px 0 0 25%;
+}
+
+.getAppBtn a, a:hover {
+  text-decoration: none;
+}
+
+.goldBox {
+  height: 760px;
+  width: 760px;
+  border: 2px solid #C6A42D;
+  z-index: -30;
+  margin: 0 auto;
+}
+
+.goldDiv{
+  height: 20.0em;
+  border: 2px solid #C6A42D;
+  padding: 0.75em;
 }
 
 /*********************************************************************************************
@@ -209,6 +273,9 @@ button.secBTN {
   margin-top: 3%;
 }
 
+.lastImg {
+  margin: 50px 0 -5px;
+  width: 100%;}
 
 /*********************************************************************************************
 
@@ -288,6 +355,11 @@ footer li{
   padding-top: 6.0em;
 }
 
+.imgHeroShadow{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
 
 
 /*********************************************************************************************
@@ -303,3 +375,72 @@ footer li{
 }
 
 .imgPad10 {padding-right: 10px;}
+
+.margintop50 {margin-top: 50px;}
+
+ul.inlinelist {padding: 30px 0px;}
+
+
+
+/*********************************************************************************************
+
+7. Forms
+
+*********************************************************************************************/
+
+
+
+.loginForm ul {
+  width: 750px;
+  margin: 0;
+  padding: 0;
+}
+
+.loginForm li {
+  padding: 1.0em;
+  position: relative;
+}
+
+.loginForm label {
+  /*float: left;*/
+  display: inline-block;
+  padding: 1.5em;
+  width: 7.0em;
+  font-family: 'Rubik', sans-serif;
+}
+
+.loginForm input{
+  height: 50px;
+  width: 400px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 5px;
+  border: 1px solid #909090;
+}
+
+.loginForm input:focus {
+  padding-right: 70px;
+  border: 1px solid #555;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+
+input:required {
+  background: #fff url(img/asterisk-red.png) no-repeat 98% center;
+}
+
+.loginForm .formHint {
+  display: inline-block;
+  color: #343639;
+  padding: .25em 7.30em;
+}
+
+.loginForm button {
+  margin-left: 7.45em;
+}
