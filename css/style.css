@@ -404,8 +404,8 @@ ul.inlinelist {padding: 30px 0px;}
 .loginForm label {
   /*float: left;*/
   display: inline-block;
-  padding: 1.5em;
-  width: 7.0em;
+  /*padding: 1.5em;*/
+  width: 6.0em;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -432,15 +432,26 @@ ul.inlinelist {padding: 30px 0px;}
 }
 
 input:required {
-  background: #fff url(img/asterisk-red.png) no-repeat 98% center;
+  background: #fff url(../img/asterisk-red.png) no-repeat 98% center;
+  background-size: 25px;
 }
 
 .loginForm .formHint {
   display: inline-block;
   color: #343639;
-  padding: .25em 7.30em;
+  padding: .55em 6.25em;
 }
 
 .loginForm button {
-  margin-left: 7.45em;
+  margin-left: 6.50em;
+}
+
+.loginForm input:invalid {
+  background: #fff url(..img/invalid.png) no-repeat 98% center;
+  border-color: #b03535;
+}
+
+.loginForm input:valid {
+  background: #fff url(..img/valid.png) no-repeat 98% center;
+  border-color: #28921f;
 }
